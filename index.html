@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Frontend Mentor | Interactive rating component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				
+				font-size: 11px;
+				text-align: center;
+				color: white;
+			}
+			.attribution a {
+				text-decoration: none;
+				color:white;
+			}
+		</style>
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+	<body>
+		<!-- Rating state start -->
+
+		<main class="card">
+			<div class="card__content">
+				<div class="card__star">
+					<img src="/images/icon-star.svg" alt="a star" />
+				</div>
+				<h1 class="card__header">How did we do?</h1>
+				<div class="card__description">
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</div>
+				<form action="" id="form">
+					<div class="card__options">
+						<label class="radio-button">
+							<input
+								type="radio"
+								value="1"
+								name="rating"
+								class="sr-only"
+							/>
+							<span class="label">
+								<span class="span">1</span>
+						    </span>
+						</label>
+						<label class="radio-button"
+							><input
+								type="radio"
+								value="2"
+								name="rating"
+								class="sr-only"
+							/><span class="label"><span class="span">2</span></span></label
+						>
+						<label class="radio-button"
+							><input
+								type="radio"
+								value="3"
+								name="rating"
+								class="sr-only"
+							/><span class="label"><span class="span">3</span></span></label
+						>
+						<label class="radio-button"
+							><input
+								type="radio"
+								value="4"
+								name="rating"
+								class="sr-only"
+							/><span class="label"><span class="span">4</span></span></label
+						>
+						<label class="radio-button"
+							><input
+								type="radio"
+								value="5"
+								name="rating"
+								class="sr-only"
+							/><span class="label"><span class="span">5</span></span></label
+						>
+					</div>
+					<button type="submit" class="card__button">Submit</button>
+				</form>
+			</div>
+
+			
+		</main>
+<!-- 
+		<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ray</a>.
+  </div> -->
+		<!-- Rating state end -->
+
+		<!-- Thank you state start -->
+		<!-- <main class="card"> -->
+		<template>
+			<div class="card__thank-you">
+				<img src="/images/illustration-thank-you.svg" alt="" />
+				<p class="card__answer">
+					You selected <span class="answer"></span>
+					<!-- Add rating here -->
+					out of 5
+				</p>
+
+				<div class="card__thank-you-message">
+					<h1>Thank You!</h1>
+					<p>
+						We appreciate you taking the time to give a rating. If you ever need
+						more support, don’t hesitate to get in touch!
+					</p>
+				</div>
+			</div>
+		</template>
+		<!-- </main> -->
+
+		<!-- Thank you state end -->
+
+
+		<script src="/app.js"></script>
+	</body>
+</html>
